@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>mySecondApp</display-name>
+  <welcome-file-list>
+    <welcome-file>welcome.html</welcome-file>
+  </welcome-file-list>
+  
+  <servlet-mapping>
+  <servlet-name>WSF</servlet-name>
+  <url-pattern>/welcome</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+  <servlet-name>SSF</servlet-name>
+  <url-pattern>/second</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet-mapping>
+  <servlet-name>TSF</servlet-name>
+  <url-pattern>/third</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>WSF</servlet-name>
+  <servlet-class>mySecondApp.welcomeServelet</servlet-class>
+  </servlet>
+  
+  
+  <servlet>
+  <servlet-name>SSF</servlet-name>
+  <servlet-class>mySecondApp.SecondServelet</servlet-class>
+  </servlet>
+  
+  <servlet>
+  <servlet-name>TSF</servlet-name>
+  <servlet-class>mySecondApp.ThirdServelet</servlet-class>
+  </servlet>
+  
+</web-app>
